@@ -1,13 +1,93 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+:root {
+    --dark-coler: #19283f;
+    --green-coler: #33d1cc;
+    --red-coler: #ff3150;
+    --yellow-coler: #ffc400;
+    --section-coler: #eff7fa
+}
+/* start navbar  */
+.navbar {
+    background-color: var(--dark-coler);
+    flex-wrap: nowrap !important;
+}
+.navbar .container {
+    flex-wrap: wrap !important;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-coler);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-coler);
+}
+.navbar .search svg {
+    color: var(--green-coler);
+}
+.navbar .navbar-toggler {
+    color: white;
+    font: 25px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.top {
+    top: 0;
+}
+/* end navbar  */
+/* satart sidbar  */
+.contant {
+    position: relative;
+}
+.sidbar {
+    background-color: var(--dark-coler);
+    min-height: calc(100vh - 72px);
+    min-width: 216px !important;
+}
+.sidbar .sidbar-contant ul {
+    position: fixed;
+}
+.sidbar .sidbar-contant ul li {
+    transition: 0.3s;
+}
+.sidbar .sidbar-contant ul li a:focus,
+.sidbar .sidbar-contant ul li a:hover,
+.sidbar .sidbar-contant ul li a .active {
+    color: var(--green-coler) !important;
+}
+.sidbar .sidbar-contant ul li:hover {
+    padding-left: 5px;
+}
+/* end sidbar  */
+/* start details  */
+.text-color {
+    color: var(--red-coler) !important;
+}
+.contant {
+
+    background-color: var(--section-coler) !important;
+}
+.flex-1 {
+    flex: 1 !important;
+}
+/* end details  */
+/* start cards  */
+.price {
+    color: var(--red-coler);
+}
+/* end cards  */
